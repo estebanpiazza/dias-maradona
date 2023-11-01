@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dias que lleva maradona sin drogarse</title>
+  <title>Cuenta maradona</title>
   <style>
   html, body {
 	color-scheme: dark light;
@@ -22,32 +22,19 @@ body {
 	font: lighter clamp(1rem, 25vmin, 10rem) / 1 system-ui, sans-serif;
   font-size: 5vw;
   text-align: center;
-}</style>
+} </style>
 
 </head>
 <body>
+
   
 </body>
 <script>
-  console.clear();
-
-let DAY = 1000 * 60 * 60 * 24;
-let today = new Date();
-let year = today.getFullYear();
-let holiday = new Date(2020, 11, 25);
-
-today.setHours(0, 0, 0, 0);
-holiday.setHours(0, 0, 0, 0);
-
-if (holiday < today) {
-	holiday.setFullYear(year + 1);
-}
-
-let days = Math.floor((holiday - today) / DAY);
-let count = days || '🎁';
-
-document.body.innerHTML = `Días que lleva Maradona sin drogarse: ${count}☠️ ¡¡Vamos Diego!!`;
-
-console.log(holiday);
-</script>
+  let hoy = new Date()
+  console.log(hoy)
+  let muerte = new Date('November 25, 2020 03:24:00')
+  console.log(muerte)
+  let dias = Math.ceil(Math.abs(muerte-hoy)/(1000*60*60*24))
+  console.log(dias)
+document.body.innerHTML = `Días que lleva Maradona sin drogarse: ${dias}☠️ ¡¡Vamos Diego!!`;</script>
 </html>
